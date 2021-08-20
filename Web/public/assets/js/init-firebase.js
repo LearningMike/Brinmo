@@ -1,5 +1,5 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyAMEYoOrwDPHoCuyxcUznJ69dM3mOx3zEU",
+    apiKey: "apikey",
     authDomain: "brinmo.com",
     databaseURL: "https://bizzybody-90f3e.firebaseio.com",
     projectId: "bizzybody-90f3e",

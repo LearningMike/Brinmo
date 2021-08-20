@@ -89,7 +89,7 @@ exports.makeSignup = functions.database.ref('/businessbank/{bizId}')
                 path: '/subaccount',
                 method: 'POST',
                 headers: {
-                    Authorization: 'Bearer sk_live_fe15d79d28e8ea1b009253c0c0a90b27c639b92b',
+                    Authorization: 'Bearer sk_live_key',
                     'Content-Type': 'application/json'
                 }
             }
@@ -150,7 +150,7 @@ exports.makeSignup = functions.database.ref('/businessbank/{bizId}')
             path: '/transaction/charge_authorization',
             method: 'POST',
             headers: {
-                Authorization: 'Bearer sk_live_fe15d79d28e8ea1b009253c0c0a90b27c639b92b',
+                Authorization: 'Bearer sk_live_key',
                 'Content-Type': 'application/json'
             }
         }
