@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148429247-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-148429247-1');
+		</script>
+		<title>Payment Alerts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index" class="logo">
+                        <img src="images/logo.jpg" draggable="false"/>
+                    </a>
+					<nav id="nav">
+						<a onclick="logOuter()" id="logouter">Log Out</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" >
+				<div class="inner" style="display: flex; text-align: center; align-items: center; justify-content: center; flex-direction: column;">
+                    <h2>Phone Number For SMS Alerts</h2>
+					<p style="font-weight: 300; opacity: 0.8;">This must be with whoever is selling or operating the business.</p>
+                    <form id="verifyNumber" method="post">
+						<div class="row uniform 50%">
+							<div class="6u 12u$(xsmall)">
+								<div class="select-wrapper">
+									<select name="demo-country" id="demo-country" required>
+										<option selected value="+234">+234 (Nigeria)</option>
+										<!-- Use these options to change the website to the country's everytime they are selected.
+										<option value="+432">Ghana (+432)</option>
+										<option value="+eee">Egypt (+eee)</option>
+										<option value="+1">USA (+1)</option>
+										<option value="+65">South Africa (+65)</option>-->
+									</select>
+								</div>
+							</div>
+							<div class="6u 12u$(xsmall)">
+								<input type="tel" name="demo-pnumber" id="demo-pnumber" value="" placeholder="eg. 08033334444" required/>
+							</div>
+							<div class="12u$" style="margin-top: 15px;">
+								<ul class="actions" style="text-align: center;">
+									<li><input style="border-radius: 50px;" id="firstSubmit" type="submit" value="Add" class="special" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<img style="display: block;" src="images/loadanim.svg" id="loaderanim" draggable="false" />
+
+		<!-- Scripts -->
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+			 
+			<script defer src="assets/js/init-firebase.js"></script>
+			<script defer src="assets/js/transfer-alert.js"></script>
+			<script defer src="assets/js/jquery.min.js"></script>
+			<script defer src="assets/js/skel.min.js"></script>
+			<script defer src="assets/js/util.js"></script>
+            <script defer src="assets/js/main.js"></script>
+
+	</body>
+</html>

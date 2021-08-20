@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148429247-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-148429247-1');
+		</script>
+		<title>Settings</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+			
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<span class="logo">
+						&nbsp;Settings <span id="hoveron" style="font-weight: 500; color: #ffffff99;"></span>
+					</span>
+					<nav id="nav">
+						<a onclick="logOuter()" id="logouter">Log Out</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" style="padding-left: 4em;">
+				<div class="inner">
+					<a target="_blank" id="xposter" href="404" style="text-decoration: underline; color:blue; line-height: 3;">Share Your Poster</a> |
+					<a target="_blank" id="codex" href="404" style="display: none; text-decoration: underline; color:blue; line-height: 3;">Print Business Code</a>  
+					<a target="_blank" id="bp" href="404" style="display: none; text-decoration: underline; color:blue; line-height: 3;">Share Business Page</a> 
+					<a href="business-image" style="text-decoration: underline; color:blue; line-height: 3;">Change Image</a> | 
+					<a href="business-location" id="bl" style="text-decoration: underline; color:blue; line-height: 3;">Change Location</a><br><br>
+					<h2>Delivery Cost</h2>
+					<form id="bizinfo" method="post" oninput="makereddish('bizinfob')">
+						<div class="row uniform 50%">
+							<div class="6u 12u$(xsmall)">
+								<div class="select-wrapper" style="text-align: center;">
+									<select name="demo-time" id="demo-time" style="text-align: center;" required>
+										<option selected value="0">Delivery Time</option> 
+										<option value="1">Instant Deliveries</option>
+										<option value="24">Next Day Deliveries</option>
+									</select>
+								</div>
+							</div>
+							<div class="6u 12u$(xsmall)">
+								<input type="number" name="demo-cost" id="demo-cost" value="" placeholder="Delivery Cost" required/>
+							</div>
+							<div class="12u$">
+								<ul class="actions" style="text-align: center;">
+									<li><input id="bizinfob" type="submit" value="Save" class="default" style="border-radius: 50px" /></li>
+								</ul>
+							</div>
+						</div>
+					</form><br>
+					<h2>Phone Number</h2>
+					<form id="verifyNumber" method="post" oninput="makereddish('firstSubmit')">
+						<div class="row uniform 50%">
+							<div class="6u 12u$(xsmall)">
+								<div class="select-wrapper">
+									<select name="demo-country" id="demo-country" required>
+										<option selected value="+234">+234 (Nigeria)</option>
+										<!-- Use these options to change the website to the country's everytime they are selected.
+										<option value="+432">Ghana (+432)</option>
+										<option value="+eee">Egypt (+eee)</option>
+										<option value="+1">USA (+1)</option>
+										<option value="+65">South Africa (+65)</option>-->
+									</select>
+								</div>
+							</div>
+							<div class="6u 12u$(xsmall)">
+								<input type="tel" name="demo-pnumber" id="demo-pnumber" value="" placeholder="eg. 08033334444" required/>
+							</div>
+							<div class="12u$" style="margin-top: 15px;">
+								<ul class="actions" style="text-align: center;">
+									<li><input style="border-radius: 50px;" id="firstSubmit" type="submit" value="Save" class="default" /></li>
+								</ul>
+							</div>
+						</div>
+					</form><br>
+					<h2>Bank Account</h2>
+					<form id="bankinfo" method="post" oninput="makereddish('bankinfob')">
+						<div class="row uniform 50%">
+							<div class="6u 12u$(xsmall)">
+								<div class="select-wrapper">
+									<select name="demo-bank" id="demo-bank" size="1" required>
+										<option selected value="0">Select Bank </option>
+										<option value="Fidelity Bank">Fidelity</option>
+										<option value="Guaranty Trust Bank">GTB</option>
+										<option value="Zenith Bank">Zenith</option>
+										<option value="United Bank For Africa">UBA</option>
+										<option value="First Bank of Nigeria">First</option>
+										<option value="First City Monument Bank">FCMB</option>
+										<option value="Union Bank of Nigeria">Union</option>
+										<option value="Access Bank">Access</option>
+										<option value="Sterling Bank">Sterling</option>
+										<option value="Heritage Bank">Heritage</option>
+										<option value="Wema Bank">Wema</option>
+										<option value="Unity Bank">Unity</option>
+										<option value="Standard Chartered Bank">Standard</option>
+										<option value="Stanbic IBTC Bank">Stanbic</option>
+										<option value="Skye Bank">Skye</option>
+										<option value="Mainstreet Bank">Mainstreet</option>
+										<option value="Keystone Bank">Keystone</option>
+										<option value="Enterprise Bank">Enterprise</option>
+										<option value="Ecobank Nigeria">Ecobank</option>
+										<option value="Citibank Nigeria">Citibank</option>
+										<option value="Kuda Bank">Kuda</option>
+										<option value="Jaiz Bank">Jaiz</option>
+										<option value="Taj Bank">Taj</option>
+									</select>
+								</div>
+							</div>
+							<div class="6u 12u$(xsmall)">
+								<input type="text" name="demo-number" id="demo-number" value="" placeholder="Account Number" required/>
+							</div>
+							<div class="12u$">
+								<ul class="actions" style="text-align: center;">
+									<li><input id="bankinfob" type="submit" value="Save" class="default" style="border-radius: 50px" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				
+			</section>
+			<section id="dashmenu">
+				<div style="background-color: #aaaabb; height: 2px; border-radius: 5px; opacity: 1; width: 100%;"></div>
+				<a href="dashboard" onmouseover="hoveron(' → dashboard')" onmouseout="hoveron('')">
+					<button id="dashtabs" class="fa fa-user" aria-label="Dashboard" title="Dashboard"></button>
+				</a><br>
+				<a href="business-transactions" onmouseover="hoveron(' → payments')" onmouseout="hoveron('')">
+					<button id="dashtabs" class="fa fa-university" aria-label="Payments" title="Payments"></button>
+				</a><br>
+				<a href="business-inventory" onmouseover="hoveron(' → orders')" onmouseout="hoveron('')">
+					<button id="dashtabs" class="fa fa-shopping-bag" aria-label="Orders" title="Orders"></button>
+				</a><br>
+				<div style="background-color: #aaaabb; height: 2px; border-radius: 5px; opacity: 1; width: 100%;"></div>
+				<a href="business-settings">
+					<button id="dashtabs" class="fa fa-gear" aria-label="Settings" title="Settings" style="background-color: #aaaabb;"></button>
+				</a>
+			</section>
+			<img style="display: block; left: calc(50% + 2em);" src="images/loadanim.svg" id="loaderanim" draggable="false" />
+
+		<!-- Scripts -->
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+			 
+			<script defer src="assets/js/init-firebase.js"></script>
+			<script defer src="assets/js/business-settings.js"></script>
+			<script defer src="assets/js/jquery.min.js"></script>
+			<script defer src="assets/js/skel.min.js"></script>
+			<script defer src="assets/js/util.js"></script>
+            <script defer src="assets/js/main.js"></script>
+
+	</body>
+</html>

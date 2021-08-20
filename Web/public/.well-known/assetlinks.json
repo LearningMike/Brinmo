@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.brinmo",
+    "sha256_cert_fingerprints":
+    ["69:CC:3E:CC:C7:DB:18:94:5F:96:04:AA:5F:67:64:39:BD:12:43:5C:65:A4:C4:0A:03:93:21:E0:94:FE:39:EE"]
+  }
+}]

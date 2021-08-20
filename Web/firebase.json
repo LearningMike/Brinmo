@@ -1,0 +1,35 @@
+{
+  "hosting": {
+    "public": "public",
+    "headers": [ {
+      "source" : "**/*.@(jpg|jpeg|png)",
+      "headers" : [ {
+        "key" : "Access-Control-Allow-Origin",
+        "value" : "*"
+      } ]
+    } ],
+    "appAssociation": "AUTO",
+    "rewrites": [{ 
+      "source": "/app/**", 
+      "dynamicLinks": true
+    },{
+      "source": "/biz/**", 
+      "dynamicLinks": true
+    },{
+      "source": "/b/**",
+      "function": "appy"
+    },{
+      "source": "/i/**",
+      "function": "appier"
+    }],
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}

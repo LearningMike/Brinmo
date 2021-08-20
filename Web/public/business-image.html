@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148429247-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-148429247-1');
+		</script>
+		<title>Image</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<span class="logo">
+					&nbsp;Image <span id="hoveron" style="font-weight: 500; color: #ffffff99;"></span>
+				</span>
+				<nav id="nav">
+					<a onclick="logOuter()" id="logouter">Log Out</a>
+				</nav>
+			</div>
+		</header>
+		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" style="padding-left: 4em; padding-top: unset;">
+				<progress style="opacity: 0; position: fixed; display: table-cell; -webkit-appearance: none; -moz-appearance: none; appearance: none; -ms-progress-appearance: unset; width: calc(100vw - 4em);" value="0" max="100" id="uploader"></progress>
+				<div class="inner" style="text-align: center; justify-content: center;">
+					<section id="three" style="margin-top: unset; margin: unset;">
+						<div style="padding-bottom: 50px;" id="imgtxt">Upload a picture of your business</div>
+						<div class="inner">
+						
+							<article style="display: table; text-align: center; align-self: center; height: 1vh; width: 38vh;">
+								<!--<div id="updimage2" class="content" style="color: #00001199; width: inherit; height: inherit;">
+									<span class="fa fa-photo" style="font-size: 25vh; color: #000011; opacity: 0.1;"></span>
+								</div>
+								<input style="height: 40px; width: 110px; display: none;" type="file" accept="image/*" id="bizimage2"/>
+								<label for="bizimage2" style="margin-top: 5px; background-color: #B21418; color: #FFF; padding: 5px; font-weight: normal; cursor: pointer; border-radius: 50px;">
+									upload
+								</label>
+								<button class="default" style="display: none; margin-top: 5px; font-weight: normal; border-radius: 50px; font-size: 12px; text-transform: capitalize;">delete this image</button>-->
+							</article>
+							<article style="display: table; text-align: center; align-self: center; height: 25vh; width: 38vh;">
+								<div id="updimage1" class="content itembox" style="color: #00001199; width: inherit; height: inherit;">
+									<span class="fa fa-photo" style="font-size: 25vh; color: #000011; opacity: 0.1;"></span>
+								</div>
+								<input style="height: 40px; width: 110px; display: none;" type="file" accept="image/*" id="bizimage1"/>
+								<label for="bizimage1" id="labelhover" style="margin-top: 5px; padding: 5px; font-weight: normal; cursor: pointer; border-radius: 50px;">
+									choose picture
+								</label>
+								<button class="default" style="display: none; margin-top: 5px; font-weight: normal; border-radius: 50px; font-size: 12px; text-transform: capitalize;">delete this image</button>
+							</article>
+							<article style="display: table; text-align: center; align-self: center; height: 1vh; width: 38vh;">
+								<!--<div id="updimage3" class="content" style="color: #00001199; width: inherit; height: inherit;">
+									<span class="fa fa-photo" style="font-size: 25vh; color: #000011; opacity: 0.1;"></span>
+								</div>
+								<input style="height: 40px; width: 110px; display: none;" type="file" accept="image/*" id="bizimage3"/>
+								<label for="bizimage3" style="margin-top: 5px; background-color: #B21418; color: #FFF; padding: 5px; font-weight: normal; cursor: pointer; border-radius: 50px;">
+									upload
+								</label>
+								<button class="default" style="display: none; margin-top: 5px; font-weight: normal; border-radius: 50px; font-size: 12px; text-transform: capitalize;">delete this image</button>-->
+							</article>
+						</div>
+					</section>
+					
+				</div>
+			</section>
+			<section id="dashmenu">
+				<div style="background-color: #aaaabb; height: 2px; border-radius: 5px; opacity: 1; width: 100%;"></div>
+				<a href="dashboard" onmouseover="hoveron(' → dashboard')" onmouseout="hoveron('')">
+					<button id="dashtabs" class="fa fa-user" aria-label="Dashboard" title="Dashboard"></button>
+				</a><br>
+				<a href="business-transactions" onmouseover="hoveron(' → payments')" onmouseout="hoveron('')">
+					<button id="dashtabs" class="fa fa-university" aria-label="Payments" title="Payments"></button>
+				</a><br>
+				<a href="business-inventory" onmouseover="hoveron(' → orders')" onmouseout="hoveron('')">
+					<button id="dashtabs" class="fa fa-shopping-bag" aria-label="Orders" title="Orders"></button>
+				</a><br>
+				<div style="background-color: #aaaabb; height: 2px; border-radius: 5px; opacity: 1; width: 100%;"></div>
+				<a href="business-settings" onmouseover="hoveron(' → settings')" onmouseout="hoveron('')">
+					<button id="dashtabs" class="fa fa-gear" aria-label="Settings" title="Settings"></button>
+				</a>
+			</section>
+			<img style="display: block; left: calc(50% + 2em);" src="images/loadanim.svg" id="loaderanim" draggable="false" />
+
+		<!-- Scripts -->
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+			<script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
+			
+			<script defer src="assets/js/init-firebase.js"></script>
+			<script defer src="assets/js/business-image.js"></script>
+			<script defer src="assets/js/jquery.min.js"></script>
+			<script defer src="assets/js/skel.min.js"></script>
+			<script defer src="assets/js/util.js"></script>
+			<script defer src="assets/js/main.js"></script>
+			
+	</body>
+</html>

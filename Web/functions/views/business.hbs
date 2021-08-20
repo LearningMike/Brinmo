@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    {{log "business page request"}}
+    {{#if bizobject.businessinfo.name}}
+        <head>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148429247-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-148429247-1');
+            </script>
+            <title>{{bizobject.businessinfo.name}} | {{bizobject.businessinfo.title}} in {{bizobject.businessinfo.cityname}}</title>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+            <!--<meta name="referrer" content="no-referrer-when-downgrade" /> check others for SEO examples-->
+            <meta content="https://brinmo.com" property="og:see_also" />
+            <meta content="https://twitter.com/brinmoHQ" property="og:see_also" />
+            <!-- Twitter data -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@brinmoHQ" />
+            <meta name="twitter:creator" content="@brinmoHQ" />
+            <meta name="twitter:title" content="{{bizobject.businessinfo.name}} | {{bizobject.businessinfo.cityname}}" />
+            <meta name="twitter:description" content="{{bizobject.businessinfo.title}} in {{bizobject.businessinfo.cityname}}. Direct and Instant delivery on Brinmo." />
+            <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/bizzybody-90f3e.appspot.com/o/business%2F{{bizobject.id.text}}%2FprofileImage1_600x600.png?alt=media" />
+            <meta name="twitter:image:width" content="600" />
+            <meta name="twitter:image:height" content="600" />
+            <meta name="twitter:image:alt" content="{{bizobject.businessinfo.name}}" />
+            <!-- Open Graph (Instagram, Facebook, WhatsApp) data -->
+            <meta property="og:title" content="{{bizobject.businessinfo.name}} | {{bizobject.businessinfo.cityname}}" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://brinmo.com/b/{{bizobject.id.link}}/" />
+            <meta property="og:image:secure_url" content="https://firebasestorage.googleapis.com/v0/b/bizzybody-90f3e.appspot.com/o/business%2F{{bizobject.id.text}}%2FprofileImage1_600x600.png?alt=media" />
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image:width" content="600" />
+            <meta property="og:image:height" content="600" />
+            <meta property="og:image:alt" content="{{bizobject.businessinfo.name}}" />
+            <meta property="og:description" content="{{bizobject.businessinfo.title}} in {{bizobject.businessinfo.cityname}}. Direct and Instant delivery on Brinmo." />
+            <meta property="og:site_name" content="{{bizobject.businessinfo.name}}" />
+            <!-- <meta property="fb:admins" content="Facebook numberic ID" /> -->
+
+            <meta name="description" content="{{bizobject.businessinfo.title}} in {{bizobject.businessinfo.cityname}}, Direct and Instant delivery on Brinmo." />
+            <meta name="robots" content="all" />
+            <meta name="keywords" content="{{bizobject.businessinfo.name}}, {{bizobject.businessinfo.title}}, brinmo, small business, {{bizobject.businessinfo.cityname}}, {{bizobject.businessinfo.title}} in {{bizobject.businessinfo.cityname}}, delivery">
+            
+            <link rel="icon" type="image/png" href="https://brinmo.com/images/favicon-32x32.png" sizes="32x32" />
+            <link rel="icon" type="image/png" href="https://brinmo.com/images/favicon-16x16.png" sizes="16x16" />
+            <link href="https://brinmo.com/b/{{bizobject.id.link}}" rel="canonical">
+            <style>
+                @page {
+                    margin: 0cm;
+                }
+                
+                @media print {
+                    * {
+                        -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+                        color-adjust: exact !important;                 /*Firefox*/
+                    }
+
+                    #noprint {
+                        display: none;
+                    }
+                }
+            </style>
+        </head>
+        <body style="font-family: Century Gothic, sans-serif; margin: unset; background-color: #000011; color: #000011;">
+            <header style='padding: none; background-color: #FFFFFF11; background-image:url("https://firebasestorage.googleapis.com/v0/b/bizzybody-90f3e.appspot.com/o/business%2F{{bizobject.id.text}}%2FprofileImage1_600x600.png?alt=media"); background-repeat: no-repeat; background-position: 50%; background-size: cover; height: 30vh;'>
+                <h1 style="font-size: 26px; margin: unset; height: 30vh; color: #fff; padding-left: 5vw; bottom: 0px; line-height: 50vh; background-color: #000011; opacity: 0.8;">
+                    {{bizobject.businessinfo.name}}
+                    <a target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="{{bizobject.businessinfo.name}}" data-url="https://brinmo.com/b/{{bizobject.id.link}}" data-related="brinmoHQ" data-show-count="false">Share</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </h1>
+            </header>
+            <div style="padding: 10px;">
+                <span style="font-size: 14px; color: #ffffff88; padding-left: 5vw;">
+                    {{bizobject.businessinfo.title}}
+                </span>
+                <span style="font-size: 14px; color: #ffffff88; padding-right: 5vw; float: right;">
+                    {{bizobject.businessinfo.nofcustomers}} customer(s)
+                </span>
+            </div>
+            <div style="padding: 5vw; background-color: #fff;">
+                {{#if bizobject.inventory}}
+                    <p style="text-align: center; opacity: 0.6; font-weight: 500;">Today's Menu</p>
+                    <div id="products" style="text-align: center;">
+                        {{#each bizobject.inventory}}
+                            <span style="display: inline-block; margin: 1vw; padding-bottom: 10px; border-radius: 10px; width: 240px; background-color: #fff; box-shadow: #00001111 0px 0px 20px 5px;">
+                                <a href="https://brinmo.com/i/{{@key}}-by-{{../bizobject.id.link}}" style="cursor: pointer;" title="{{this.name}}">
+                                    <div id='{{@key}}' style='border-radius: 10px; background-image:url("https://firebasestorage.googleapis.com/v0/b/bizzybody-90f3e.appspot.com/o/business%2F{{../bizobject.id.text}}%2F{{@key}}_150x150.png?alt=media"); background-repeat: no-repeat; background-position: 50%; background-size: cover; height: 120px; width: 240px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;'>
+                                    </div>
+                                </a>
+                                <div style='font-size: 15px; width: 220px; float: left; text-align: left; margin: 10px; margin-bottom: 2px;'>{{this.name}}</div>
+                                <div style='font-size: 14px; line-height: normal; float: left; margin-left: 20px;'>₦{{this.cost}}</div>
+                            </span>
+                        {{/each}}
+                    </div>
+                    <br><br>
+                {{/if}}
+                {{#if bizobject.reviews}}
+                    <p id="noprint" style="text-align: center; opacity: 0.6; font-weight: 500;">Recent Reviews</p>
+                    <div id="reviews" id="noprint" style="text-align: center;">
+                        {{#each bizobject.reviews}}
+                            <span style="display: inline-block; margin: 1vw; padding: 10px; border-radius: 10px; width: 240px; background-color: #fff; box-shadow: #00001111 0px 0px 20px 5px;">
+                                <span style='display: inline-block; margin-top: 10px; height: 100px; width: 100px; border-radius: 50%; background-image: url("https://firebasestorage.googleapis.com/v0/b/bizzybody-90f3e.appspot.com/o/customer%2F{{@key}}%2FprofileImage_150x150.png?alt=media"); background-repeat: no-repeat; background-position: 50%; background-size: cover;'> </span>
+                                <span style="display: inline-block;">
+                                    <div style='font-size: 14px; line-height: normal; margin: 10px; margin-top: 1px;'>{{this.cname}}</div>
+                                    <div style='font-size: 15px; width: 220px; float: left; text-align: left; margin: 10px; margin-top: 4px;'>
+                                        {{this.rev}}
+                                    </div>
+                                    <div style='font-size: 14px; line-height: normal; margin: 10px; margin-top: 1px; opacity: 0.6;'>{{this.time}}</div>
+                                </span>
+                            </span>
+                        {{/each}}
+                    </div>
+                {{/if}}
+                {{#if bizobject.inventory}}
+                    <p id="order" id="noprint" style="padding-top: 2vw; text-align: center; opacity: 0.6; font-weight: 500;">Want to order?</p>
+                {{/if}}
+                <h3 id="noprint" style="text-align: center;">Download our app</h3>
+                <div id="noprint" style="text-align: center; align-self: center; margin-top: 40px; margin-bottom: 40px;">
+                    <a style="margin: 25px; text-decoration: none;" target="_blank" href='https://play.google.com/store/apps/details?id=com.brinmo&referrer={{bizobject.id.text}}'>
+                        <img height="80px" width="auto" style="padding: none;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="100%"/>
+                    </a>
+                    <a style="margin: 25px;" target="_blank" href="https://forms.gle/yvfpRSsfW6XAXcVx5">
+                        <img height="54px" width="auto" style="padding: 13px;" alt='Coming Soon to AppStore' src='https://brinmo.com/images/cmsoon.jpg' width="100%"/>
+                    </a>
+                </div>
+                <div id="noprint" style="text-align: center; font-size: 14px;">Free transfers, direct and fast deliveries from {{bizobject.businessinfo.name}}</div>
+            </div>
+            <footer id="noprint" style="padding: 10px; color: #ffffff88; padding-left: 5vw; font-size: 14px;">
+                <span style="font-size: 14px;">Join </span>
+                <a style="text-decoration: none; font-size: 14px; color: #ffffff99; font-weight: bold;" href="https://brinmo.com" title="Brinmo">
+                    brinmo.com
+                </a>
+            </footer>
+        </body>
+    {{else}}
+        <head>
+      	<title>Business Not Found</title>
+      	<meta charset="utf-8" />
+      	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      	<link rel="stylesheet" href="https://brinmo.com/assets/css/main.css" />
+        <style>
+            @page {
+                margin: 0cm;
+            }
+            @media print {
+                canvas{
+                    display: none;
+                }
+            }
+        </style>
+      	<link rel="icon" type="image/png" href="https://brinmo.com/images/favicon-32x32.png" sizes="32x32" />
+      	<link rel="icon" type="image/png" href="https://brinmo.com/images/favicon-16x16.png" sizes="16x16" />
+    	<script type="text/javascript">
+      		function backie(){
+        		history.back();
+      		}
+    	</script>
+	    </head>
+        <body style="vertical-align: middle; background: #000011; color: #FFFFFF; font-family: Roboto, Helvetica, Arial, sans-serif; margin: unset; margin-block: unset; padding: none; text-align: center;">
+            <header id="header">
+                <div class="inner">
+                    <a href="https://brinmo.com" draggable="false" class="logo" style="font-weight: lighter;">
+                        <img src="https://brinmo.com/images/logo.jpg" alt="Brinmo"  draggable="false"/>
+                    </a>
+                </div>
+            </header>
+            <!--<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>-->
+            <div style="vertical-align: middle; padding: none; margin: unset; padding: none;">
+                <p style="color:#FFFFFF; font-size: 10rem; margin: unset; padding: none;">404</p>
+                <p style="color: #FFFFFFBB; margin-block: unset; margin: unset; padding: none; padding-bottom: 20px; font-size: 28px;">Weep not, Child.</p>
+                <button onclick="backie()" style="font-size: 18px; font-weight: bold;">Back</button>
+                <a draggable="false" href="https://brinmo.com" style="text-decoration: none; margin: unset;"> <button style="font-size: 18px; font-weight: bold;">Home</button></a>
+                <p style="font-size: 14px; color: #FFFFFF66; margin-block: unset; margin: unset; padding: none; padding-top: 20px;">michael.abia@aun.edu.ng</p>
+            </div>
+            <script src="https://brinmo.com/assets/js/jquery.min.js"></script>
+            <script src="https://brinmo.com/assets/js/skel.min.js"></script>
+            <script src="https://brinmo.com/assets/js/util.js"></script>
+            <script src="https://brinmo.com/assets/js/main.js"></script>
+        </body>
+    {{/if}}
+</html>
