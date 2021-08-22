@@ -1,5 +1,5 @@
 # Brinmo
-An app for Brick and Mortars. No, Doordash... No, Square. #ThisIsWhyItFailed
+An app for Brick and Mortars. Like Doordash... No, Square. #ThisIsWhyItFailed
 
 Demo: https://youtu.be/Cu__3zpUA90
 
