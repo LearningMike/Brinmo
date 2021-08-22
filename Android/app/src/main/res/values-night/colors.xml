@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#AAAABB</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBrinmo">#000011</color>
+    <color name="colorBlueShade">#55000011</color>
+    <color name="colorSecondary">#000000</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="card_text_color">#FFFFFF</color>
+    <color name="card_label_color">#D4D9DC</color>
+    <color name="card_cvv_color">#383838</color>
+    <color name="CTA_text">#FFFFFF</color>
+    <color name="CTA_bg">#000000</color>
+</resources>

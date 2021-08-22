@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/pcity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Delivery within City"
+        android:drawableBottom="@drawable/ic_keydown"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/userphone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="140dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:hint="Phone Number"
+        android:textColorHint="@color/colorAccent"
+        android:paddingHorizontal="30dp"
+        android:background="@drawable/round_wbg"/>
+
+    <EditText
+        android:id="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/userphone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:maxLength="80"
+        android:maxLines="4"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimary"
+        android:hint="Delivery Address: e.g Dorm XX at AUN Main Campus or your home address within the city"
+        android:textColorHint="@color/colorAccent"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/round_nwbg"/>
+
+    <android.widget.Button
+        android:id="@+id/paytapo"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="   Send   "
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:background="@drawable/round_wbg"/>
+
+    <TextView
+        android:id="@+id/paycharge"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/colorWhite"
+        android:text="Free Transfer"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:alpha="0.6"
+        android:textSize="14sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

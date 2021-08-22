@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.brinmo.CCFragment.CCNumberFragment">
+
+    <com.brinmo.Utils.CreditCardEditText
+        style="@style/CardInput"
+        android:id="@+id/et_number"
+        android:hint="Insert Your Card Number"
+        android:inputType="number"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColorHint="@color/card_cvv_color"
+        android:textColor="@color/colorOnSecondary"
+        android:textSize="18sp"
+        android:background="@color/colorSecondary"
+        android:maxLength="19"/>
+
+
+</FrameLayout>

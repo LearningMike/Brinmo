@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewish"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="25dp"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_weight="0">
+
+        <ImageView
+            android:id="@+id/i_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="start"
+            android:src="@drawable/round_bw"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_weight="8"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/i_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="28"
+            android:text=""
+            android:textColor="@color/colorOnSecondary"
+            android:alpha="0.8"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/i_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text=""
+            android:textColor="@color/colorOnSecondary"
+            android:alpha="0.8"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_menu_plus"
+            android:alpha="0.2"
+            android:scaleType="center"
+            app:tint="@color/colorOnSecondary" />
+    </LinearLayout>
+
+</LinearLayout>

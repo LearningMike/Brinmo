@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Body1." parent="TextAppearance.MaterialComponents.Body1">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name= "RobotoTextViewStyle" parent= "android:Widget.TextView" >
+        <item name="android:fontFamily"> sans-serif-light </item>
+    </style>
+
+    <style name= "RobotoButtonStyle" parent= "android:Widget.Holo.Button" >
+        <item name="android:fontFamily"> sans-serif-light </item>
+    </style>
+
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base"/>
+
+    <style name="ToolBarStyle.Base" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
+        <item name="theme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
+        <item name="android:fontFamily"> sans-serif-light </item>
+    </style>
+
+    <style name="ToolBarStyle.Event" parent="ToolBarStyle">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+        <item name="android:fontFamily"> sans-serif-light </item>
+    </style>
+
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">@color/CTA_text</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/CTA_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <style name="CardLabel">
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:textColor">@color/card_label_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/items_inbetween</item>
+        <item name="android:padding">@dimen/items_inbetween_medium</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="CardInput">
+        <item name="android:layout_marginLeft">@dimen/items_inbetween</item>
+        <item name="android:layout_marginRight">@dimen/items_inbetween</item>
+        <item name="android:layout_marginTop">@dimen/items_inbetween</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/items_inbetween_medium</item>
+    </style>
+
+
+    <style name="CardStyle">
+        <item name="android:layout_marginLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

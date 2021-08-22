@@ -13,4 +13,3 @@ app/captures
 app/.externalNativeBuild
 app/.cxx
 app/app/google-services.json
-app//app/src/main/java/com/brinmo/CheckOutActivity.java

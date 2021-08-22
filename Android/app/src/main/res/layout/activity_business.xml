@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".BusinessActivity">
+
+    <ImageButton
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/facb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_bbg"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_back"
+        android:elevation="10dp"
+        android:translationZ="10dp">
+
+    </ImageButton>
+
+    <ImageButton
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/faca"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_bbg"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_menu_plus"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:translationZ="10dp">
+    </ImageButton>
+
+    <TextView
+        app:layout_constraintRight_toLeftOf="@+id/faca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Tap to add to your list"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:background="@drawable/round_modebg"
+        android:id="@+id/addtext"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:paddingHorizontal="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:translationZ="10dp"
+        android:visibility="gone">
+
+    </TextView>
+
+    <ImageButton
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/facsh"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_bbg"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_menu_share"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:translationZ="10dp">
+
+    </ImageButton>
+
+    <ImageButton
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/facs"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_bbg"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_menu_minus"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:translationZ="10dp">
+
+    </ImageButton>
+
+    <RelativeLayout
+        android:id="@+id/bizview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bspace"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/bizimage">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bizimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/bizname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@id/bizimage"
+            android:text=""
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:textColor="@color/colorWhite"
+            android:maxLength="30"/>
+
+        <TextView
+            android:id="@+id/biztitle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/bizname"
+            android:text=""
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"
+            android:alpha="0.6"
+            android:maxLength="36"/>
+
+        <TextView
+            android:id="@+id/starView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/biztitle"
+            android:layout_toLeftOf="@+id/xView"
+            android:paddingRight="5dp"
+            android:textColor="@color/colorWhite"
+            android:alpha="0.3"
+            android:text=""
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/xView"
+            android:drawableStart="@drawable/ic_customers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/starView"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorWhite"
+            android:alpha="0.3"
+            android:text=""
+            android:textSize="14sp"/>
+
+        <android.widget.Button
+            android:id="@+id/bizchat"
+            android:layout_below="@id/biztitle"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="5dp"
+            android:drawableTop="@drawable/ic_call_btn"
+            android:background="@drawable/round_bbg"
+            android:text="call"
+            android:textColor="#55FFFFFF"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <android.widget.Button
+            android:id="@+id/bizorder"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:drawableTop="@drawable/ic_order_btn"
+            android:background="@drawable/round_bbg"
+            android:layout_alignTop="@id/bizchat"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="order"
+            android:textColor="#55FFFFFF"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <android.widget.Button
+            android:id="@+id/bizpay"
+            android:layout_below="@id/biztitle"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="5dp"
+            android:drawableTop="@drawable/ic_pay_btn"
+            android:background="@drawable/round_bbg"
+            android:text="pay"
+            android:textColor="#55FFFFFF"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#11FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/bizview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bizview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/review_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/bizrev"
+        app:layout_constraintTop_toBottomOf="@+id/bizview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:text="This business has no reviews yet"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorOnSecondary"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

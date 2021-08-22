@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".ProfileimageActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_upload"
+        android:visibility="invisible"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/pusern"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Upload a Profile Image"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        app:drawableBottomCompat="@drawable/ic_keydown" />
+
+    <TextView
+        android:id="@+id/puseri"
+        app:layout_constraintTop_toBottomOf="@id/pusern"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorAccent"
+        android:text=""
+        android:gravity="center"/>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/puseri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/uploadbtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/puseri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:visibility="visible"
+        android:paddingHorizontal="25dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:background="@drawable/round_wbg"
+        android:text="Choose"/>
+
+    <android.widget.Button
+        android:id="@+id/skipibtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:visibility="visible"
+        android:paddingHorizontal="25dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:background="@drawable/round_wbg"
+        android:text="Skip"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

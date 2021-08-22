@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewish"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorOnSecondary"
+        android:alpha="0.1"/>
+
+    <TextView
+        android:id="@+id/sr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:maxLength="28"
+        android:text=""
+        android:textColor="@color/colorOnSecondary"
+        android:alpha="0.8"
+        android:textSize="18sp"
+        android:textStyle="normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sr_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLength="26"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="@color/colorOnSecondary"
+            android:alpha="0.8"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/starView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingRight="3dp"
+            android:textColor="@color/colorOnSecondary"
+            android:alpha="0.3"
+            android:text=""
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/xView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/colorOnSecondary"
+            android:alpha="0.3"
+            android:text=""
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

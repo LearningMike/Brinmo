@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/colorBrinmo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paystacky"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:textAlignment="center"
+                android:text="A PCI-DSS certified payment processor, licensed by the Central Bank of Nigeria, and partners with Visa and Mastercard. They apply the highest standards of card data encryption, and have fraud prevention systems that will block unusual transactions." />
+
+            <ImageButton
+                android:src="@drawable/ic_check_btn"
+                android:padding="10dp"
+                android:id="@+id/closepop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_wbg"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorBrinmo"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

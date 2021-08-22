@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".SettingsActivity">
+
+    <ImageButton
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/facb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/round_bbg"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_back"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/facb"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/heading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="Settings"
+        android:textColor="@color/colorOnSecondary"
+        android:textSize="22sp" />
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/round_bbg"
+            android:showDividers="beginning"
+            android:dividerPadding="1dp"
+            android:orientation="vertical">
+            <android.widget.Button
+                android:id="@+id/changetheme"
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:text="Dark Mode 🌗"
+                android:textColor="@color/colorOnSecondary"
+                android:background="@drawable/listviewish" />
+            <android.widget.Button
+                android:id="@+id/profpic"
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:text="Profile Picture"
+                android:textColor="@color/colorOnSecondary"
+                android:background="@drawable/listviewish" />
+            <android.widget.Button
+                android:id="@+id/locatsett"
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:text="Location Settings"
+                android:textColor="@color/colorOnSecondary"
+                android:background="@drawable/listviewish" />
+            <android.widget.Button
+                android:id="@+id/notifsett"
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:text="Notification Settings"
+                android:textColor="@color/colorOnSecondary"
+                android:background="@drawable/listviewish" />
+        </LinearLayout>
+    </ScrollView>
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
