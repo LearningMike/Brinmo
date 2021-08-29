@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "791403897673",
+    "firebase_url": "https://bizzybody-90f3e.firebaseio.com",
+    "project_id": "bizzybody-90f3e",
+    "storage_bucket": "bizzybody-90f3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791403897673:android:453c6631fd5718b94ab098",
+        "android_client_info": {
+          "package_name": "com.brinmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791403897673-014s1jt9ibmbgrekn0qv0i0h9mu2f6sn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brinmo",
+            "certificate_hash": "72b0e7529f718951d189520d1d8df6c6ce40f3e7"
+          }
+        },
+        {
+          "client_id": "791403897673-uk62d117sofg8fuciposb37fqil2d2em.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brinmo",
+            "certificate_hash": "a047b78e4bf430e5a84838db5ee4c2cd2e562118"
+          }
+        },
+        {
+          "client_id": "791403897673-vq4mruulgqtphtt7djv7o3urmm6610uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbC8p7ycPCgk7Yx55fiRIE7uAU3T0iS1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791403897673-vq4mruulgqtphtt7djv7o3urmm6610uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
